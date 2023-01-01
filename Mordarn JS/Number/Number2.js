@@ -37,3 +37,17 @@ const primeNumberCheckGeneral = (num) => {
 
 const prime_number = primeNumberCheckGeneral(200);
 console.log(prime_number);
+
+//given one max number but generate two random number return function two generated number, now you have gotten two generate number you can any kind operation .
+const generateRandomNumberUse = (max, whatDoYouWant) => {
+  const r1 = Math.trunc(Math.random() * max);
+  const r2 = Math.trunc(Math.random() * max);
+  const result = whatDoYouWant(r1, r2);
+
+  return result;
+};
+
+const sum = generateRandomNumberUse(100, (r1, r2) => r1 + r2);
+const sub = generateRandomNumberUse(20, (r1, r2) => r1 - r2);
+const multi = generateRandomNumberUse(20, (r1, r2) => r1 * r2);
+const divided = generateRandomNumberUse(20, (r1, r2) => r1 / r2);
