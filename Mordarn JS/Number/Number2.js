@@ -18,6 +18,7 @@ const primeNumberCheckUseMathSqrt = (num) => {
 const prime_check = primeNumberCheckUseMathSqrt(2);
 console.log(prime_check);
 
+// another way to check prime number
 const primeNumberCheckGeneral = (num) => {
   if (num === undefined || num === 1) {
     return false;
@@ -34,5 +35,5 @@ const primeNumberCheckGeneral = (num) => {
   }
 };
 
-const prime_number = primeNumberCheckGeneral(11);
+const prime_number = primeNumberCheckGeneral(200);
 console.log(prime_number);
