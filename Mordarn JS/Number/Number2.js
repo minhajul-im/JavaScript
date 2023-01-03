@@ -15,5 +15,5 @@ const primeNumberCheckUseMathSqrt = (num) => {
   return true;
 };
 
-const primeOne = primeNumberCheckUseMathSqrt(2);
-console.log(primeOne);
+const prime_check = primeNumberCheckUseMathSqrt(2);
+console.log(prime_check);
