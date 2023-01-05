@@ -16,7 +16,7 @@ const minhaj = {
     firstName: "Minhajul",
     lastName: "Islam",
   },
-  age: ["twenty"],
+  age: ["twenty one"],
 };
 const templateStringFunc = `Hey, I'm ${minhaj?.name?.firstName}
  ${minhaj?.name?.lastName}. I'm in now ${minhaj.age[0]}`;

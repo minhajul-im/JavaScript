@@ -57,3 +57,7 @@ const concat = str.concat(templateString);
 
 //split(): This method splits the current string into an array of strings, based on the specified separator.
 const split = str.split("");
+
+//trim() method in JavaScript returns a new string by removing leading and trailing whitespace characters from the original string.
+const trimStr = "     minhaj      ";
+const trim = trimStr.trim();
