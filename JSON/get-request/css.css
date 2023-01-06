@@ -1,0 +1,11 @@
+#id {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.user {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
