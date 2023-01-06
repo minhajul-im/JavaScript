@@ -54,3 +54,6 @@ const slice3 = str.slice(6); // Bangladesh
 
 //concat(): This method concatenates the specified strings to the end of the current string.
 const concat = str.concat(templateString);
+
+//split(): This method splits the current string into an array of strings, based on the specified separator.
+const split = str.split("");
