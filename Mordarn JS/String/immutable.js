@@ -65,3 +65,6 @@ const trim = trimStr.trim();
 //padEnd() & padStart() method in JavaScript returns a new string by padding the end of the original string with a specified character until the resulting string reaches the desired length.
 const padStart = trimStr.padStart(30, "*");
 const padEnd = trimStr.padEnd(30, "*");
+
+//join() method is available for arrays and is used to concatenate array elements with a specified separator.
+const join = str.split("").join("_");
