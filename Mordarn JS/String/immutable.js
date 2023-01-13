@@ -61,3 +61,7 @@ const split = str.split("");
 //trim() method in JavaScript returns a new string by removing leading and trailing whitespace characters from the original string.
 const trimStr = "     minhaj      ";
 const trim = trimStr.trim();
+
+//padEnd() & padStart() method in JavaScript returns a new string by padding the end of the original string with a specified character until the resulting string reaches the desired length.
+const padStart = trimStr.padStart(30, "*");
+const padEnd = trimStr.padEnd(30, "*");
