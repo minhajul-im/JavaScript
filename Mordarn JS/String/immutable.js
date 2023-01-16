@@ -1,3 +1,4 @@
+// testing string
 const str = "Hello-Bangladesh";
 
 // length: This method returns the length of the current string.
@@ -8,6 +9,9 @@ const templateString = `Hello Bangladesh, It's a small country. Many population 
 
 //includes(): This method returns a boolean indicating whether or not the specified substring is contained in the current string.
 const includes = str.includes("d"); // true
+
+// indexOf(): This method returns the index of the first occurrence of the specified substring in the current string.
+const indexOf = str.indexOf("a"); // a
 
 //search(): This method returns the index of the first occurrence of the specified regular expression in the current string.
 const search = str.search("l"); // 2
@@ -37,9 +41,6 @@ const charAt = str.charAt(6); // B
 
 // charCodeAt(): This method returns the Unicode code point of the character at the specified index of the current string.
 const charCodeAt = str.charCodeAt(5); // 45
-
-// indexOf(): This method returns the index of the first occurrence of the specified substring in the current string.
-const indexOf = str.indexOf("a"); // a
 
 //lastIndexOf(): This method returns the index of the last occurrence of the specified substring in the current string.
 const lastIndexOf = str.lastIndexOf("B"); // B
