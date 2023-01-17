@@ -40,3 +40,6 @@ const charCodeAt = str.charCodeAt(5); // 45
 
 // indexOf(): This method returns the index of the first occurrence of the specified substring in the current string.
 const indexOf = str.indexOf("a"); // a
+
+//lastIndexOf(): This method returns the index of the last occurrence of the specified substring in the current string.
+const lastIndexOf = str.lastIndexOf("B"); // B

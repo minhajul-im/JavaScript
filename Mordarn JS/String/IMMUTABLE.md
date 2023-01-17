@@ -1,7 +1,5 @@
 # Immutable string methods
 
-lastIndexOf(): This method returns the index of the last occurrence of the specified substring in the current string.
-
 substring(): This method returns a new string that contains the specified substring of the current string.
 
 substr(): This method returns a new string that contains the specified substring of the current string.
