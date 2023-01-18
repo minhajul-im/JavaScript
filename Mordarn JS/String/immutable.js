@@ -37,3 +37,6 @@ const charAt = str.charAt(6); // B
 
 // charCodeAt(): This method returns the Unicode code point of the character at the specified index of the current string.
 const charCodeAt = str.charCodeAt(5); // 45
+
+// indexOf(): This method returns the index of the first occurrence of the specified substring in the current string.
+const indexOf = str.indexOf("a"); // a
