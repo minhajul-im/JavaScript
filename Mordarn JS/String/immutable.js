@@ -34,3 +34,6 @@ const subString = str.substring(3, 5); // lo
 
 // charAt(): This method returns the character at the specified index of the current string.
 const charAt = str.charAt(6); // B
+
+// charCodeAt(): This method returns the Unicode code point of the character at the specified index of the current string.
+const charCodeAt = str.charCodeAt(5); // 45
