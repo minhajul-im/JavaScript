@@ -1,7 +1,5 @@
 # Immutable string methods
 
-charAt(): This method returns the character at the specified index of the current string.
-
 charCodeAt(): This method returns the Unicode code point of the character at the specified index of the current string.
 
 indexOf(): This method returns the index of the first occurrence of the specified substring in the current string.

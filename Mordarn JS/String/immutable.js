@@ -29,5 +29,8 @@ const match = templateString.match(/Bangladesh/); // index 6
 // Using a regular expression with the 'g' flag to find all occurrences of 'Bangladesh'
 const matchGlobal = templateString.match(/Bangladesh/g); // [Bangladesh, Bangladesh]
 
-// This method returns the index of the first occurrence of the specified substring in the current string.
+// substring(): This method returns the index of the first occurrence of the specified substring in the current string.
 const subString = str.substring(3, 5); // lo
+
+// charAt(): This method returns the character at the specified index of the current string.
+const charAt = str.charAt(6); // B
