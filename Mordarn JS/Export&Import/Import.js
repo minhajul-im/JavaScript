@@ -9,3 +9,7 @@ import { sub as subtract, sum as addition } from "./Export.js";
 
 subtract(20, 10);
 addition(20);
+
+// name import default
+import multiple from "./Export.js";
+multiple(10);
