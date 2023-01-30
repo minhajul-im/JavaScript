@@ -11,8 +11,8 @@ const string = new String("hello String Constructor");
  */
 
 // you can all string methods use
-
 const length = string.length;
+const splitString = string.split("");
 
 // implementation string with function, but not need this function you can use simple string what js given normal function.
 const strFunc = (str) => {
