@@ -13,3 +13,15 @@ const string = new String("hello String Constructor");
 // you can all string methods use
 
 const length = string.length;
+
+const strFunc = (str) => {
+  if (str === "string") {
+    return new String(str).toUpperCase();
+  } else {
+    return str.length;
+  }
+};
+
+const funcString = strFunc("string");
+
+console.log(funcString);
