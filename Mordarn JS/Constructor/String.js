@@ -14,6 +14,7 @@ const string = new String("hello String Constructor");
 
 const length = string.length;
 
+// implementation string with function, but not need this function you can use simple string what js given normal function.
 const strFunc = (str) => {
   if (str === "string") {
     return new String(str).toUpperCase();
@@ -25,3 +26,7 @@ const strFunc = (str) => {
 const funcString = strFunc("string");
 
 console.log(funcString);
+
+/**
+ *  you can use object methods with string objects, but it's generally recommended to use string literals for strings whenever possible. String objects can be useful in specific situations, such as when you need to explicitly convert values to strings or when you're dealing with object-oriented programming concepts. However, for most everyday string manipulations, using string literals is more intuitive and efficient.
+ */
