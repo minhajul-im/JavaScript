@@ -25,3 +25,24 @@ let decrement = --x; // 9
 
 // Equal operator
 let equal = x == y; // false
+
+// Equal operator (check type)
+let equalType = 20 === y; // true
+
+// Not equal operator
+let notEqual = x != "10"; // true
+
+// Not equal operator (check type)
+let notEqualType = x !== "10"; // false
+
+// Greater than
+let greater = x > y; // false
+
+// Less than
+let less = x < y; // true
+
+// Greater than equal
+let greaterEqual = x >= y; // false
+
+// Less than equal
+let lessEqual = x <= y; // true
