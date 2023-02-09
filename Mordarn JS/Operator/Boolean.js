@@ -33,6 +33,10 @@ const nullishCoalescing1 =
     ? "if you wanna check the value (null or undefined) then you can use nullish-coalescing operator"
     : "short line nullish-coalescing";
 
+if (num2 === null && num2 === undefined) {
+  return `it's a big line, you can use nullish-coalescing operator`;
+}
+
 /**
  * @param false (false, null, undefined, NaN, "", 0) => All are return False.
  * @param true ([], {}, "undefined", true, number, -734,) => All are return True.
