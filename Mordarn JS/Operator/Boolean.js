@@ -28,6 +28,11 @@ const andCondition = num1 === 20 && num2 > 5;
 //The nullish coalescing ( ?? ) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined , and otherwise returns its left-hand side operand.
 const nullishCoalescing = false ?? "default";
 
+const nullishCoalescing1 =
+  num1 === null && num1 === undefined
+    ? "if you wanna check the value (null or undefined) then you can use nullish-coalescing operator"
+    : "short line nullish-coalescing";
+
 /**
  * @param false (false, null, undefined, NaN, "", 0) => All are return False.
  * @param true ([], {}, "undefined", true, number, -734,) => All are return True.
