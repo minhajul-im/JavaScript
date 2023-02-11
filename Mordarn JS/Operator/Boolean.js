@@ -2,16 +2,16 @@ const num1 = 5;
 const num2 = 10;
 
 // greater than condition.
-const greaterThan = num1 > num2;
+const greaterThan = num1 > num2; // return false
 
 // less than condition.
-const lessThan = num1 < num2;
+const lessThan = num1 < num2; // return true
 
 // greater than or equal
-const greaterThanOrEqual = num1 >= num2;
+const greaterThanOrEqual = num1 >= num2; // return false
 
 // less than or equal
-const lessThanOrEqual = num1 <= num2;
+const lessThanOrEqual = num1 <= num2; // return true
 
 // Type Check and value check.
 const equalToEqual = num1 === num2;
@@ -25,7 +25,7 @@ const orCondition = num1 > 10 || num2 < 10;
 // and operator check true then next end of the true return true. when fast data false never go to next data.
 const andCondition = num1 === 20 && num2 > 5;
 
-//The nullish coalescing ( ?? ) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined , and otherwise returns its left-hand side operand
+//The nullish coalescing ( ?? ) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined , and otherwise returns its left-hand side operand.
 const nullishCoalescing = false ?? "default";
 
 /**
