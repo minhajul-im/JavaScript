@@ -1,4 +1,5 @@
 // "this" using in object.
+//I think "this" keyword usage is all but may have more,  if i remember will update later,
 
 const obj = {
   //if wanna use this num key & value,
