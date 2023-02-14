@@ -2,7 +2,7 @@
 
 const obj = {
   //if wanna use this num key & value,
-  num: 10,
+  num: 20,
 
   // you can use this syntax in the function
   sum: function (tk) {
@@ -32,6 +32,11 @@ const obj = {
 
     return arrowFunc;
   },
+
+  // template string using this keyword, you can access function
+  str(name) {
+    return ` Heyo, How's it going? I'm ${name}, I'm ${this.num} `;
+  },
 };
 
 console.log(obj.sum(10)); //20
@@ -42,3 +47,5 @@ console.log(obj.plus(10)); //20
 
 // syntax simple you can check my closer folder
 console.log(obj.minus()(100)); // 90
+
+console.log(obj.str("MinhaJ"));
