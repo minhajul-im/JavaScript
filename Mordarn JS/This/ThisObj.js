@@ -22,10 +22,23 @@ const obj = {
     // return number - num
     return number + number;
   },
+
+  // yeah you can you arrow function but you have to take regular function in arrow function, like,
+  minus() {
+    // 1st you have to take this then you can use arrow function.
+    const num = this.num;
+
+    const arrowFunc = (number) => number - num;
+
+    return arrowFunc;
+  },
 };
 
-console.log(obj.sum(10));
+console.log(obj.sum(10)); //20
 
-console.log(obj.multi()(10));
+console.log(obj.multi()(10)); //100
 
-console.log(obj.plus(10));
+console.log(obj.plus(10)); //20
+
+// syntax simple you can check my closer folder
+console.log(obj.minus()(100)); // 90
