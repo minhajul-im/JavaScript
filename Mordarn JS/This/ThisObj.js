@@ -15,8 +15,17 @@ const obj = {
 
     return times;
   },
+
+  // you can't access any property in this object when you using arrow function like
+  plus: (number) => {
+    // when you write num "error=> num is not defined"
+    // return number - num
+    return number + number;
+  },
 };
 
 console.log(obj.sum(10));
 
 console.log(obj.multi()(10));
+
+console.log(obj.plus(10));
