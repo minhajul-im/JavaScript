@@ -8,6 +8,15 @@ const obj = {
   sum: function (tk) {
     return this.num + tk;
   },
+
+  // this syntax valid
+  multi() {
+    const times = (a) => a * this.num;
+
+    return times;
+  },
 };
 
 console.log(obj.sum(10));
+
+console.log(obj.multi()(10));
