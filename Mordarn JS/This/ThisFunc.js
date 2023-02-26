@@ -21,6 +21,7 @@ console.log(call);
 function applyFunc(hi, bye) {
   return `${hi}, I'm ${this.name} from ${this.live}. I'm ${this.age}. ${bye}....`;
 }
+
 const obj1 = {
   name: "John",
   live: "Dhaka",
@@ -29,4 +30,18 @@ const obj1 = {
 
 const arr = ["Hi", "good bye, see you next"];
 
-console.log(applyFunc.apply(obj, arr));
+console.log(applyFunc.apply(obj1, arr));
+
+/**
+ * bind:
+The bind method returns a new function with the specified this value, but it doesn't immediately execute the function. Instead, it creates a new function that, when called, will have the original function's this value permanently set to the provided value.
+ */
+function bindFunc(hi, bye) {
+  return `${hi}, I'm ${this.name} from ${this.live}. I'm ${this.age}. ${bye}....`;
+}
+
+const args = ["Hey", "have a good day..."];
+
+const bind = bindFunc.bind(obj1);
+
+console.log(bind(args.at(0), args.at(1)));
