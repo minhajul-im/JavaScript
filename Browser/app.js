@@ -10,3 +10,17 @@ const setProduct = () => {
   const quantity = getId("quantity");
   getStorage(product, quantity);
 };
+
+const getLocalStorage = () => {
+  let getProduct = localStorage.getItem("product");
+  let product = {};
+  if (getProduct) product = JSON.parse(getProduct);
+  return product;
+};
+
+const getStorage = (product, quantity) => {
+  const getProduct = getLocalStorage();
+  getProduct[product] = quantity;
+  const stringify = JSON.stringify(getProduct);
+  localStorage.setItem("product", stringify);
+};
