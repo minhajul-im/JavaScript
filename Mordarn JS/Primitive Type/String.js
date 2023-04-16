@@ -52,3 +52,7 @@ const split = templateString.split("");
 
 // when you can check length
 const strLength = str.length;
+
+// when you want to (start and end) keep something. The first parameter is Max length and the second parameter is(symbol, number letter, whatever it is).
+const padStart = str.padStart(15, "*");
+const padEnd = str.padEnd(15, "*");
