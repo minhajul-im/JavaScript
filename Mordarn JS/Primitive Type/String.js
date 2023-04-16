@@ -43,3 +43,12 @@ const trimStr = "     minhaj      ";
 const trimStart = trimStr.trimStart();
 const trim = trimStr.trim();
 const trimEnd = trimStr.trimEnd();
+
+// start to end slice
+const slice = trimStr.slice(1, 3);
+
+// when you want to use split method(symbol, space, semicolon) return Array.
+const split = templateString.split("");
+
+// when you can check length
+const strLength = str.length;
