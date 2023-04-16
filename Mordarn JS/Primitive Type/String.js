@@ -37,3 +37,9 @@ const indexOf = str.indexOf("d");
 
 //when you want last index number
 const lastIndexOf = str.lastIndexOf("d");
+
+// (start and end) space remove done.
+const trimStr = "     minhaj      ";
+const trimStart = trimStr.trimStart();
+const trim = trimStr.trim();
+const trimEnd = trimStr.trimEnd();
