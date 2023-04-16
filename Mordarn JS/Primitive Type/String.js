@@ -56,3 +56,10 @@ const strLength = str.length;
 // when you want to (start and end) keep something. The first parameter is Max length and the second parameter is(symbol, number letter, whatever it is).
 const padStart = str.padStart(15, "*");
 const padEnd = str.padEnd(15, "*");
+
+// when you want to check (what is the start and end) then you can use the method. return Boolean.
+const startWith = str.startsWith("B");
+const endWith = str.endsWith("a");
+
+const replaceAll = templateString.replaceAll(`Bangladesh`, `Dhaka`);
+// replaceAll all string
