@@ -30,3 +30,9 @@ const sqrtNumber = Math.sqrt(20);
 
 //A power, or index, is used when we want to multiply a number by itself several times
 const powNumber = Math.pow(5, 2);
+
+// generate random number
+const random = Math.random() * num;
+
+// return integer number
+const parseInt = Number.parseInt(num);
