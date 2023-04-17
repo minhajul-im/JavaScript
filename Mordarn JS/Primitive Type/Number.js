@@ -13,6 +13,12 @@ const plus = number + num;
 // minus
 const minus = number - num;
 
+// multiply
+const multiply = number * num;
+
+// divided
+const divided = number / num;
+
 // find minimum numbers
 const minNumber = Math.min(12, 23, 40, 50);
 
