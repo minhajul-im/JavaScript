@@ -36,3 +36,7 @@ const random = Math.random() * num;
 
 // return integer number
 const parseInt = Number.parseInt(num);
+
+//return integer number doesn't exist dot after number.
+const trunc = Math.trunc(-0.69);
+const floor = Math.floor(-0.6);
