@@ -40,3 +40,9 @@ const parseInt = Number.parseInt(num);
 //return integer number doesn't exist dot after number.
 const trunc = Math.trunc(-0.69);
 const floor = Math.floor(-0.6);
+
+// return integer but .5 up increment and .5 down that number.
+const round = Math.round(50.5);
+
+// return absolute value.
+const abs = Math.abs(random);
