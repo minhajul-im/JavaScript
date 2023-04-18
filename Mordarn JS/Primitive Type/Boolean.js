@@ -32,3 +32,6 @@ const nullishCoalescing = false ?? "default";
  * @param false (false, null, undefined, NaN, "", 0) => All are return False.
  * @param true ([], {}, "undefined", true, number, -734,) => All are return True.
  */
+
+// having three elements, parts, or divisions being or consisting of an alloy of three elements
+const ternaryOperator = num1 > 10 ? true : false;
