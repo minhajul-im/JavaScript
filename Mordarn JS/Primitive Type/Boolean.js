@@ -12,3 +12,9 @@ const greaterThanOrEqual = num1 >= num2;
 
 // less than or equal
 const lessThanOrEqual = num1 <= num2;
+
+// Type Check and value check.
+const equalToEqual = num1 === num2;
+
+//  check not equal.
+const notEqual = num1 !== num2;
