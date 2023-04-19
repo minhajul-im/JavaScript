@@ -51,3 +51,7 @@ const abs = Math.abs(random);
 let pre = 10;
 let preIncrement = ++pre;
 let postIncrement = pre++;
+
+//decrement number
+let preDecrement = --pre;
+let postDecrement = pre--;
