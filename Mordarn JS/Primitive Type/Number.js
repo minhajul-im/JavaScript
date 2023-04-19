@@ -64,3 +64,15 @@ const parseFloating = parseFloat(num);
 
 // return decimal numbers what you want two digits or as many numbers if you want.
 const toFixedNumber = num.toFixed(2);
+
+//given one max number but generate two random number return function two generated number, now you have gotten two generate number you can any kind operation .
+const generateRand = (max, whatDoYouWant) => {
+  const r1 = Math.trunc(Math.random() * max);
+  const r2 = Math.trunc(Math.random() * max);
+  const result = whatDoYouWant(r1, r2);
+  return result;
+};
+const a = generateRand(100, (r1, r2) => r1 + r2);
+const b = generateRand(20, (a1, a2) => a1 - a2);
+const c = generateRand(20, (a1, a2) => a1 * a2);
+const d = generateRand(20, (a1, a2) => a1 / a2);
