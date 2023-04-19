@@ -61,3 +61,6 @@ const parseInteger = parseInt(num);
 
 // return with decimal.
 const parseFloating = parseFloat(num);
+
+// return decimal numbers what you want two digits or as many numbers if you want.
+const toFixedNumber = num.toFixed(2);
