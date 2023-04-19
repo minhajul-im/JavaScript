@@ -55,3 +55,9 @@ let postIncrement = pre++;
 //decrement number
 let preDecrement = --pre;
 let postDecrement = pre--;
+
+// return not with decimal.
+const parseInteger = parseInt(num);
+
+// return with decimal.
+const parseFloating = parseFloat(num);
