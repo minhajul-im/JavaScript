@@ -46,3 +46,8 @@ const round = Math.round(50.5);
 
 // return absolute value.
 const abs = Math.abs(random);
+
+//increment number
+let pre = 10;
+let preIncrement = ++pre;
+let postIncrement = pre++;
