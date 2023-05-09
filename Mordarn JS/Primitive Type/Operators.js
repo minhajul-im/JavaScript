@@ -44,3 +44,9 @@ let greaterEqual = x >= y; // false
 
 // Less than equal
 let lessEqual = x <= y; // true
+
+// Bitwise (&) operator
+let bitwiseAnd = x & y; // binary number(0,1)
+
+// Bitwise (or |) operator
+let bitwiseOr = x | y; // binary number(0,1)
