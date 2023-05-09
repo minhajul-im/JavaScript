@@ -38,3 +38,9 @@ let greater = x > y; // false
 
 // Less than
 let less = x < y; // true
+
+// Greater than equal
+let greaterEqual = x >= y; // false
+
+// Less than equal
+let lessEqual = x <= y; // true
