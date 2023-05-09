@@ -32,3 +32,9 @@ let notEqual = x != "10"; // true
 
 // Not equal operator (check type)
 let notEqualType = x !== "10"; // false
+
+// Greater than
+let greater = x > y; // false
+
+// Less than
+let less = x < y; // true
