@@ -20,3 +20,9 @@ let increment = ++x; // 11
 
 // Decrement operator (pre, post)
 let decrement = --x; // 9
+
+// Equal operator
+let equal = x == y; // false
+
+// Equal operator (check type)
+let equalType = 20 === y; // true
