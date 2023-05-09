@@ -11,3 +11,6 @@ let multiplication = x * y;
 
 // Division operator
 let division = y / x;
+
+// Modulus (remainder) operator
+let modulus = 21 % x;

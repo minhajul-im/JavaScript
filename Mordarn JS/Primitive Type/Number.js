@@ -7,18 +7,6 @@ const number = 1234;
 const num = 100;
 const checkIsNaN = isNaN(num) ? `Not a Number` : `It's Number`;
 
-// plus
-const plus = number + num;
-
-// minus
-const minus = number - num;
-
-// multiply
-const multiply = number * num;
-
-// divided
-const divided = number / num;
-
 // find minimum numbers
 const minNumber = Math.min(12, 23, 40, 50);
 
