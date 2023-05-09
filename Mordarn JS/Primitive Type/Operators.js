@@ -26,3 +26,9 @@ let equal = x == y; // false
 
 // Equal operator (check type)
 let equalType = 20 === y; // true
+
+// Not equal operator
+let notEqual = x != "10"; // true
+
+// Not equal operator (check type)
+let notEqualType = x !== "10"; // false
