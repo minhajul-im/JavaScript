@@ -50,3 +50,12 @@ let bitwiseAnd = x & y; // binary number(0,1)
 
 // Bitwise (or |) operator
 let bitwiseOr = x | y; // binary number(0,1)
+
+// Bitwise (XOR) operator
+let bitwiseXOR = x ^ y; // binary number(0,1)
+
+// Bitwise left shift
+let bitwiseLeft = x << y; // 10485760
+
+// Bitwise right shift
+let bitwiseRight = y >> x; //0
