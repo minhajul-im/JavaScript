@@ -101,3 +101,10 @@ const chainingOperatorObj = chainingObj?.name?.lastName;
 // example chaining operator on implement array.
 const chainingArr = [10, 20, 30, 40];
 const chainingOperatorArr = chainingArr?.at();
+
+//when you use (...) in the function that is called rest Operator.
+const restOperator = function (a, b, ...rest) {
+  const x = a + b;
+  return rest;
+};
+const rest = restOperator(1, 2, 3, 4, 5, 6, 7, 8);
