@@ -1,6 +1,8 @@
-// Addition operator
+// TODO: JavaScript Arithmetic Operators
+
 let x = 10,
   y = 20;
+// Addition operator
 let addition = x + y; // 30
 
 // Subtraction operator
@@ -20,6 +22,8 @@ let increment = ++x; // 11
 
 // Decrement operator (pre, post)
 let decrement = --x; // 9
+
+// TODO: JavaScript Comparison Operators
 
 // Equal operator
 let equal = x == y; // false
@@ -45,6 +49,8 @@ let greaterEqual = x >= y; // false
 // Less than equal
 let lessEqual = x <= y; // true
 
+// TODO: JavaScript Bitwise Operators
+
 // Bitwise (&) operator
 let bitwiseAnd = x & y; // binary number(0,1)
 
@@ -59,3 +65,17 @@ let bitwiseLeft = x << y; // 10485760
 
 // Bitwise right shift
 let bitwiseRight = y >> x; //0
+
+// Bitwise right shift zero
+let bitwiseZero = y >>> x; // 0
+
+// TODO: JavaScript Logical Operators
+
+// Logical nd operator (&&)
+let andOperator = 10 == 20 && 20 == 33; // false
+
+// Logical OR operator (||)
+let orOperator = 10 == 20 || 20 == 33; // false
+
+// Logical Not (!)
+let notLogical = !(10 == 20); // true
