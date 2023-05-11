@@ -42,3 +42,10 @@ const every = arr.every(x);
 const array = [[1], [2], [3]];
 // return a one-dimensional array
 const flat = array.flat();
+
+// It's work flat & map method combination
+const flatMap1 = flat.flatMap((num) => (num === 2 ? 2 + 10 : 1));
+const flatMap2 = flat.flatMap((num) => [num * 2]);
+
+// It's work fill-up any value
+const fill = flat.fill(5);
