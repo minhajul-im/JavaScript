@@ -1,4 +1,4 @@
-const arr = [2, 3, 4, 5, 6, 7, 8, 9];
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // set last index in array.
 arr.push(10);
@@ -26,3 +26,9 @@ const lastIndex = arr.lastIndexOf(9);
 
 // return boolean value.
 const arrIncludes = arr.includes(9);
+
+//The copyWithin() method shallow copies part of an array to another location in the same array and returns it without modifying its length.
+const copyWithin = arr.copyWithin(2, 5);
+
+//It creates an iterator object and a loop that iterates over each key/value pair.
+const entries = Object.entries(arr); // bracket in object.
