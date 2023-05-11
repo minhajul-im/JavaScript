@@ -49,3 +49,9 @@ const flatMap2 = flat.flatMap((num) => [num * 2]);
 
 // It's work fill-up any value
 const fill = flat.fill(5);
+
+//The Array (from())static method creates a new, shallow-copied Array instance from an iterable or array-like object.
+const from = Array.from("minhajul");
+
+//The Array (of()) static method creates a new Array instance from a variable number of arguments, regardless of the number or type of the arguments.
+const of = Array.of(10 * 10);
