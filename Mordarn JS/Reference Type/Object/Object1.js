@@ -1,4 +1,4 @@
-//TODO:<-- ---------------- --> Object <-- ------------------- -->
+//OBJECT
 
 const sakibObj = {
   name: "Sakib",
@@ -19,42 +19,20 @@ const deleteSakib = delete sakibObj.age;
 // update value.
 const updateSakib = (sakibObj.virtu = "Handsome & All-rounder");
 
-// return all keys in array.
-const sakibKeys = Object.keys(sakibObj);
-
-// return all values in array.
-const sakibValues = Object.values(sakibObj);
-
-//return (key & value) in array.
-const sakibEntries = Object.entries(sakibObj);
-
-// you can use "For-Of-Loop" in Object.
-for (const key of sakibKeys) {
-  // console.log(key);
-}
-for (const value of sakibValues) {
-  // console.log(value);
-}
-for (const [key, value] of sakibEntries) {
-  // console.log(`"${key}" : "${value}"`);
-}
-//-----------> for in loop ------------>
-for (const key in sakibObj) {
-  // console.log(`${key} : ${sakibObj[key]}`);
-}
-
 const Student = {
   name: "Sakib",
   age: 35,
 };
-const createObj = Object.create(Student); // Object create & assign same method.
+// Object create & assign same method.
 // It's totally different object returns an empty object but if you want to all operation do it.
+const createObj = Object.create(Student);
 
 const freezeMethod = {
   name: "Tamim",
   age: "36",
 };
-Object.freeze(freezeMethod); // You can do never anything to an object.
+// You can do never anything to an object.
+Object.freeze(freezeMethod);
 freezeMethod.occupation = "Cricketer";
 freezeMethod.age = 35;
 delete freezeMethod.age;
@@ -70,4 +48,5 @@ const obj2 = {
 };
 const checkFor = Object.is(obj2, obj1);
 
-const { name: fname, age, ...occupation } = obj1; // destructuring.
+// destructuring.
+const { name: fname, age, ...occupation } = obj1;
