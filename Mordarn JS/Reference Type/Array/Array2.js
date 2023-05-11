@@ -1,6 +1,4 @@
-// CRUD OPERATION
-
-const players = [
+const persons = [
   {
     id: "c6941175-cc4e-4c56-b13e-eeaabd914a51",
     name: "Nasir",
@@ -27,37 +25,50 @@ const players = [
   },
 ];
 
-// CRUD: C => create, R => read, U => update, D => delete.
+// return something.
+const myMap = persons.map((id) => id?.id);
 
-// create operation done.
-const createMehedi = {
-  id: "7f42e942-fbf2-4119-9d2f-776d496e4c40",
-  name: "Mehedi",
-  age: 25,
-  contact: "mehedi@gmail.com",
+// if you give a condition then all check then return.
+const myFind = persons.find((name) => name?.name === "Mosta");
+
+// if you give a condition all check then return.
+const myFIlter = persons.filter((age) => age?.age < 30);
+
+// no return just for something show.
+persons.forEach((contact) => contact?.contact);
+
+// return index number.
+const getId = "3ff58ea0-4615-4225-a599-fddfe21ddbd0";
+const myFindIndex = persons.findIndex((id) => id?.id === getId);
+
+// "reduce" have taken two parameters. (acc, cur) any kind of operation on "cur" value but at the end of the day return  "acc" . "cur" will value push in "acc".
+const reduces = [1, 2, 3, 4, 5, 6, 8];
+const myReduces = reduces.reduce((acc, cur) => {
+  if (cur % 2 === 1) acc[cur] = cur;
+
+  return acc;
+}, {});
+
+const myReduce = reduces.reduce((acc, cur) => {
+  if (cur % 2 === 0) acc.push(cur);
+
+  return acc;
+}, []);
+
+const sumReduce = reduces.reduce((acc, cur) => {
+  return (acc = acc + cur);
+}, 0);
+
+//destructuring Array.
+const [one, two, ...others] = reduces;
+
+// when you use (...) another place that is called spread Operator.
+const spread = [1, 2, 3, 4, 5, 6];
+const spreadOperator = [...spread, 9, 10, 11];
+
+//when you use (...) in the function that is called rest Operator.
+const restOperator = function (a, b, ...rest) {
+  const x = a + b;
+  return rest;
 };
-
-// read operation done.
-players.push(createMehedi);
-const mosta = "3ff58ea0-4615-4225-a599-fddfe21ddbd0";
-const index = players.find((id) => id.id === mosta);
-
-// update operation done.
-const updateTamim = {
-  name: "Tamim Iqbal",
-  email: "iqbal@gmail.com",
-};
-
-const tamimId = "7322e8df-0b94-4f2c-ba91-b0b8ca2f7a75";
-const tamim = players.findIndex((id) => id.id === tamimId);
-players[tamim] = {
-  ...players[tamim],
-  ...updateTamim,
-};
-
-// delete operation start.
-const nasirId = "c6941175-cc4e-4c56-b13e-eeaabd914a51";
-const nasirDelete = players.findIndex((id) => id.id === nasirId);
-players.splice(0, 1);
-
-//console.log(players)
+restOperator(1, 2, 3, 4, 5, 6, 7, 8);
