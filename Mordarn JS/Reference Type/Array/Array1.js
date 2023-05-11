@@ -32,3 +32,13 @@ const copyWithin = arr.copyWithin(2, 5);
 
 //It creates an iterator object and a loop that iterates over each key/value pair.
 const entries = Object.entries(arr); // bracket in object.
+
+// Every method like as loop check condition if condition okay then return true otherwise false.
+const x = (a) => a < 100;
+// every method called in must given function
+const every = arr.every(x);
+
+// If you have a multidimensional array then you wanna a one-dimensional array then use this method.
+const array = [[1], [2], [3]];
+// return a one-dimensional array
+const flat = array.flat();
