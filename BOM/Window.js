@@ -8,3 +8,10 @@ window.confirm("hello Bangladesh");
 
 //displays a dialog box to get input from the user.
 window.prompt();
+
+// open a new window
+window.open();
+
+// close the current window
+
+window.close();
