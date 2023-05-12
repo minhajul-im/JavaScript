@@ -1,7 +1,7 @@
-// return local time
+// it returns the weekly name, monthly name, current date, year & current time. (local place)
 const time = new Date();
 
-// it's return number between 0 - 999 thats represents that's on local time
+// it's return number between 0 - 999 that represents that's on local time
 const milliSecond = time.getMilliseconds();
 
 // it's return number between 0 to 59 that represents that's on local time
