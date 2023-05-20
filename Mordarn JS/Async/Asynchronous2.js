@@ -12,12 +12,12 @@ function findCourse() {
   console.log(
     "you think i will buy a course,then what do you do? find your course"
   );
-  let promise = new Promise((response, resolve) => {
+  let promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       if (find) {
-        response("you can go now next step");
+        resolve("you can go now next step");
       } else {
-        resolve("I have no choice");
+        reject("I have no choice");
       }
     }, 4000);
   });
@@ -28,12 +28,12 @@ function findCourse() {
 function buyCourse() {
   console.log("if you choose your course then go to next step");
 
-  let promise = new Promise((response, resolve) => {
+  let promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       if (payment) {
-        response("your course ready now you can start");
+        resolve("your course ready now you can start");
       } else {
-        resolve("I have no money now, i will try later");
+        reject("I have no money now, i will try later");
       }
     }, 1500);
   });
@@ -46,12 +46,12 @@ function trackProgress() {
     "check your progress, when complete your course then you will get a certificate"
   );
 
-  let promise = new Promise((response, resolve) => {
+  let promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       if (120 < hours) {
-        response("may be you completed your task.");
+        resolve("may be you completed your task.");
       } else {
-        resolve("you can try again");
+        reject("you can try again");
       }
     }, 5000);
   });
@@ -64,9 +64,9 @@ function finishCourse() {
     "you have completed your course, now you can finish your studies"
   );
 
-  let promise = new Promise((response, _resolve) => {
+  let promise = new Promise((resolve, _reject) => {
     setTimeout(() => {
-      response(" Congress........... you got your certificate");
+      resolve(" Congress........... you got your certificate");
     }, 100);
   });
 
