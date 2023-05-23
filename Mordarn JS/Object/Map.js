@@ -28,9 +28,11 @@ const sizeMap = map.size;
 const deleteMap = map.delete("age");
 
 // clear method used for clearing all the map.
-// const clearMap = map.clear();
+const clearMap = map.clear();
+
 // map iterator
 for (const [key, value] of map) {
   console.log(key, value);
 }
+
 console.log(map.get("name"));
