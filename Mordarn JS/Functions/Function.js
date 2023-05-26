@@ -22,7 +22,7 @@ arrowFunction("Argument");
 
 // Arrow Function ES6
 const arrowFunc = (parameter) => {
-  ` No, in a one-line arrow function in JavaScript, you don't need to explicitly use the "return" keyword if you wanna return a single expression.`;
+  ` No, in a one-line arrow function in JavaScript, you don't need to explicitly use the "return" keyword if you wanna return a single expression. ${parameter}`;
 };
 
 // Method definition (within an object)
