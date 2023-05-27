@@ -20,3 +20,27 @@
  * myObject, for in loop or for of loop.
  * myMap, for of loop or foreach.
  */
+
+const a = (a) => a;
+
+// Object
+const myObject = {
+  name: "John",
+  age: 30,
+  // (x) => x, "hello", // read key uniqueness article.
+  func() {}, // you can declare this
+  a: a("function"),
+};
+console.log(myObject);
+
+// Map
+const myMap = new Map();
+
+myMap.set("name", "John");
+myMap.set("age", 30);
+myMap.set("a", a("function"));
+myMap.set((x) => x, "hello");
+myMap.set("func", (x) => {
+  return x;
+});
+console.log(myMap);
