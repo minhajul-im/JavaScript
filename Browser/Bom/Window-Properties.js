@@ -5,7 +5,7 @@ let newTab;
 
 // open
 openBtn.addEventListener("click", () => {
-  newTab = window.open("https://www.google.com/");
+  newTab = window.open("http://www.minhajul.com/");
 });
 
 // close
@@ -25,4 +25,12 @@ heightBtn.addEventListener("click", () => {
 // screen width
 widthBtn.addEventListener("click", () => {
   document.getElementById("width-span").innerHTML = window.innerWidth;
+});
+
+// window location
+const btnWindow = document.getElementById("btn-location");
+btnWindow.addEventListener("click", () => {
+  document.getElementById(
+    "span-tag-location"
+  ).innerHTML = `Hostname:- ${window.location.hostname}, Host:- ${window.location.host}, Pathname:- ${window.location.pathname}, Port:- ${window.location.port}, href:- ${window.location.href}, Origin:- ${window.location.origin},`;
 });
