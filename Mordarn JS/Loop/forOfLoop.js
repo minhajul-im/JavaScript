@@ -33,3 +33,15 @@ const sakibEntries = Object.entries(objNames);
 for (const [key, value] of sakibEntries) {
   console.log(`"${key}" : "${value}"`);
 }
+
+// using for of
+const forOf = (x) => {
+  let sum = 0;
+
+  for (const item of x) {
+    sum += item;
+  }
+
+  return sum;
+};
+console.log(forOf(x));

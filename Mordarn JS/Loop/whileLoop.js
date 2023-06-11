@@ -6,3 +6,17 @@ while (whileLoop) {
   whileLoop = false;
   break;
 }
+
+// using while loop
+const whileLoops = (x) => {
+  let sum = 0,
+    start = 0;
+
+  while (x.length > start) {
+    sum += x[start];
+    start++;
+  }
+
+  return sum;
+};
+console.log(whileLoops(x));
