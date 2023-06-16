@@ -1,44 +1,41 @@
-// window open and close
-const openBtn = document.getElementById("open-btn");
-const closeBtn = document.getElementById("close-btn");
-let newTab;
+// get id function
+const getFuncId = (id) => document.getElementById(id);
 
-// open
-openBtn.addEventListener("click", () => {
+let newTab; // need for open & close window
+
+// open method work in your open new tab
+getFuncId("open-btn").addEventListener("click", () => {
   newTab = window.open("http://www.minhajul.com/");
 });
 
-// close
-closeBtn.addEventListener("click", () => {
-  window.close(newTab);
+// close method work in your current window close
+getFuncId("close-btn").addEventListener("click", () => {
+  newTab.close();
 });
 
-// window screen height & width
-const heightBtn = document.getElementById("height-btn");
-const widthBtn = document.getElementById("width-btn");
-
-// screen height
-heightBtn.addEventListener("click", () => {
+// screen height method work in your computer height
+getFuncId("height-btn").addEventListener("click", () => {
   document.getElementById("height-span").innerHTML = window.innerHeight;
 });
 
-// screen width
-widthBtn.addEventListener("click", () => {
+// screen width method work in your computer width
+getFuncId("width-btn").addEventListener("click", () => {
   document.getElementById("width-span").innerHTML = window.innerWidth;
 });
 
 // window location
-const btnWindow = document.getElementById("btn-location");
-btnWindow.addEventListener("click", () => {
-  document.getElementById(
+getFuncId("btn-location").addEventListener("click", () => {
+  getFuncId(
     "span-tag-location"
   ).innerHTML = `Hostname:- ${window.location.hostname}, Host:- ${window.location.host}, Pathname:- ${window.location.pathname}, Port:- ${window.location.port}, href:- ${window.location.href}, Origin:- ${window.location.origin},`;
 });
 
-// window assign
-// it's work current window on the link
-const assignBtn = document.getElementById("btnAssign");
-
-assignBtn.addEventListener("click", () => {
+// window assign methods open the current window in your link
+getFuncId("btnAssign").addEventListener("click", () => {
   window.location.assign("http://www.minhajul.com");
+});
+
+// history back & forward
+getFuncId("backBtn").addEventListener("click", () => {
+  console.log("hello");
 });
