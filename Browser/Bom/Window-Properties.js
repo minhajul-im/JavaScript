@@ -34,3 +34,11 @@ btnWindow.addEventListener("click", () => {
     "span-tag-location"
   ).innerHTML = `Hostname:- ${window.location.hostname}, Host:- ${window.location.host}, Pathname:- ${window.location.pathname}, Port:- ${window.location.port}, href:- ${window.location.href}, Origin:- ${window.location.origin},`;
 });
+
+// window assign
+// it's work current window on the link
+const assignBtn = document.getElementById("btnAssign");
+
+assignBtn.addEventListener("click", () => {
+  window.location.assign("http://www.minhajul.com");
+});
