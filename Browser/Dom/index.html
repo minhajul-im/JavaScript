@@ -9,10 +9,10 @@
   </head>
   <body>
     <header>
-      <h1>Hello Dom</h1>
+      <h1 id="headerTitle" class="headerTitle">Hello Dom</h1>
     </header>
     <main>
-      <p class="dom">
+      <div class="dom">
         <code
           >DOM stands for Document Object Model. It is a programming interface
           for web documents, representing the structure and content of an HTML
@@ -20,12 +20,12 @@
           access, manipulate, and dynamically update the elements and content of
           a web page using scripting languages like JavaScript.
         </code>
-        <button>more..</button>
-      </p>
+        <button id="moreBtn">more..</button>
+      </div>
 
       <section>
         <div class="todo-list-box">
-          <h3 class="title">To Do List</h3>
+          <h3 class="title" id="title">To Do List</h3>
           <ul class="items">
             <li class="item">List-1</li>
             <li class="item">List-2</li>
@@ -41,6 +41,7 @@
         </div>
       </section>
     </main>
-    <script src="./getElements.js"></script>
+    <!-- <script src="./getElements.js"></script> -->
+    <script src="./property.js"></script>
   </body>
 </html>
