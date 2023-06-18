@@ -1,0 +1,61 @@
+h1 {
+  text-align: center;
+  color: rgb(31, 51, 101);
+  font-family: fantasy;
+  letter-spacing: 1px;
+}
+.dom {
+  width: 500px;
+  height: 120px;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: auto;
+  background: rgb(171, 171, 171);
+}
+.dom > button {
+  border: none;
+  color: blue;
+  cursor: pointer;
+  background: rgb(171, 171, 171);
+  padding-left: 0;
+}
+section {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.todo-list-box {
+  height: 260px;
+  width: 200px;
+  border-radius: 10px;
+  background: #ddd;
+  padding: 1rem;
+}
+.title {
+  text-align: center;
+  color: rgb(39, 171, 160);
+}
+.items {
+  padding: 0;
+}
+.items > li {
+  list-style: none;
+  padding: 8px;
+  background: #eec6c6;
+  margin: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.item-delete {
+  list-style: none;
+}
+.item-delete > button {
+  padding: 0.5rem 0.8rem;
+  background: rgb(58, 148, 151);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
