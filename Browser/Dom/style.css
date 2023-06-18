@@ -59,3 +59,10 @@ section {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.p-tag {
+  text-decoration: dotted;
+  background-color: rgb(178, 90, 240);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
