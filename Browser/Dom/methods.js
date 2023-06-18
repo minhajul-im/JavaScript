@@ -26,3 +26,7 @@ ulItems.removeChild(ulItems.children[2]);
 
 // you can get children from the parent.
 let getItem = ulItems.children[1];
+
+// you can use replace method its work class name with css
+const headerTitle = getQuery(".headerTitle").classList;
+headerTitle.replace("headerTitle", "new-header-title");
