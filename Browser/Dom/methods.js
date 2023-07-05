@@ -30,3 +30,18 @@ let getItem = ulItems.children[1];
 // you can use replace method its work class name with css
 const headerTitle = getQuery(".headerTitle").classList;
 headerTitle.replace("headerTitle", "new-header-title");
+
+// node list get all li element in the name of 'item'.
+const nodeList = getQueryAll("li.item");
+nodeList[2].style.backgroundColor = "green";
+nodeList[0].innerText = "hello-item";
+
+// node list object like array
+
+//get length
+const length = nodeList.length;
+
+for (let i = 0; i < nodeList.length; i++) {
+  nodeList[i].style.color = "yellow";
+  nodeList[i].innerText = "hello";
+}
