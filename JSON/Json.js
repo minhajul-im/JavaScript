@@ -20,3 +20,6 @@ const json = {
   },
   hobbies: ["reading", "playing guitar", "hiking"],
 };
+
+// convert to object to json
+const helloJson = JSON.stringify(json);

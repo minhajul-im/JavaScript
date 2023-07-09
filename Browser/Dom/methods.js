@@ -36,7 +36,11 @@ const nodeList = getQueryAll("li.item");
 nodeList[2].style.backgroundColor = "green";
 nodeList[0].innerText = "hello-item";
 
-// node list object like array
+/**
+ * A NodeList may look like an array, but it is not.
+You can loop through a NodeList and refer to its nodes by index.
+But, you cannot use Array methods like push(), pop(), or join() on a NodeList.
+ */
 
 //get length
 const length = nodeList.length;
