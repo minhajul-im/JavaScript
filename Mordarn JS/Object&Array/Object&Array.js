@@ -35,3 +35,15 @@ const objToArrReduce = (obj) => {
   }, []);
 };
 console.log(objToArrReduce(obj));
+
+// some key added in object
+const addKeyObj = (data) => {
+  return Object.keys(data).reduce((acc, cur) => {
+    acc[cur] = {
+      ...obj[cur],
+      value: "",
+    };
+    return acc;
+  }, {});
+};
+console.log(addKeyObj(obj));
