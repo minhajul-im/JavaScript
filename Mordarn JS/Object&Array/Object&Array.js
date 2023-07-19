@@ -20,11 +20,6 @@ const obj = {
     placeholder: "*****",
   },
 };
-// object to array
-const objToArrMap = (data) => {
-  return Object.keys(data).map((key) => ({ name: key, ...obj[key] }));
-};
-console.log(objToArrMap(obj));
 
 // object to array using reduce
 const objToArrReduce = (obj) => {
