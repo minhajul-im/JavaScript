@@ -21,12 +21,13 @@ const arrowFunction = (parameter) => {
 arrowFunction("Argument");
 
 // Arrow Function ES6
-const arrowFunc = (parameter) => {
+const arrowFunc = (parameter) =>
   ` No, in a one-line arrow function in JavaScript, you don't need to explicitly use the "return" keyword if you wanna return a single expression. ${parameter}`;
-};
 
 // Method definition (within an object)
 const funcObj = {
+  name: `Minhajul Islam`,
+
   method(parameter) {
     return ` you can write valid javascript code here, ${parameter}`;
   },
@@ -44,3 +45,14 @@ function ConstructorFunc(name, age) {
 
 const constFunc = new ConstructorFunc("Minhaj", 20);
 console.log(constFunc.func());
+
+// yield function
+function* generateId() {
+  let id = 0;
+  while (true) {
+    yield id++;
+  }
+}
+const getId = generateId();
+
+const id = getId.next().value;
