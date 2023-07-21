@@ -56,3 +56,8 @@ function* generateId() {
 const getId = generateId();
 
 const id = getId.next().value;
+
+// Immediately Invoked Function Expression (IIFE)
+(function () {
+  console.log(`Immediately Invoked Function Expression`);
+})();
