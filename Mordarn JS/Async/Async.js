@@ -1,3 +1,5 @@
+// async function implement
+
 const getRequest = async (url) => {
   try {
     const res = await fetch(url);
@@ -7,3 +9,5 @@ const getRequest = async (url) => {
     console.log(err);
   }
 };
+
+getRequest("www.example.com/");
