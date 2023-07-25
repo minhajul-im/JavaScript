@@ -25,7 +25,7 @@ const factoryFunc = (name, email) => {
   };
 };
 
-const minhaj = factoryFunc("MinhaJ", "minhaj@gmail.com");
+const minhaj = factoryFunc("Minhajul", "minhajul@gmail.com");
 
 console.log(minhaj.contact());
 
