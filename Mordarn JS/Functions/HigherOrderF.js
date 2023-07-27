@@ -13,3 +13,15 @@ const higherOrder = (a, hof) => {
 const hof = (a, b) => a * b;
 
 console.log(higherOrder(10, hof));
+
+// you have to pass parameter as a function
+const hoFunc = (para, func) => {
+  return func(para);
+};
+
+console.log(hoFunc(10, (a) => a + a));
+
+const maps = [1, 2, 3, 4, 5, 6];
+// map
+const myMap = maps.map((num, index) => ({ index: num + index }));
+console.log(myMap);
