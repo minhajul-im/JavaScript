@@ -35,7 +35,36 @@ console.log(person);
 console.log(personClone);
 
 /**
- * I have changed only the email from "personClone",
-why are they both changing objects? 
-This is the fact, it's a huge issue.
+ * I have changed only the email from "personClone",why are they both changing objects? This is the fact, it's a huge issue.
  */
+
+/**
+ * TODO: HOW CAN WE SOLVE THIS PROBLEM?
+ */
+
+const student = {
+  name: "MinhaJ",
+  address: {
+    contact: {
+      email: "programmer.minhajul@gmail.com",
+      phone: "+8801 301 109 2**",
+    },
+    place: "Uttara, Dhaka",
+  },
+};
+
+const string = JSON.stringify(student);
+const studentClone = JSON.parse(string);
+
+//look like the same but studentClone object it's totally independent object. studentClone object doesn't care, what have the changed student object.
+console.log(student);
+console.log(studentClone);
+
+student.address.contact.email = "hello@minhajul.com";
+studentClone.address.contact.phone = "+8801 996 222 5**";
+
+console.log(typeof studentClone);
+
+// now solve this problem, if you wanna change both object they don't care! they don't care, who changed what?
+console.log(student);
+console.log(studentClone);
