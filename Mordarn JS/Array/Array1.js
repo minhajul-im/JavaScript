@@ -1,5 +1,8 @@
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
+// check array is array or not // if be array return boolean
+const checkArray = Array.isArray(arr);
+
 // set last index in array.
 arr.push(10);
 
