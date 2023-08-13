@@ -31,3 +31,10 @@ variable();
 // store in array
 const array = ["minhajul", store];
 array[1]();
+
+// sore in object
+const object = {
+  name: "minhajul",
+  store,
+};
+object.store();
