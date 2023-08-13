@@ -45,3 +45,12 @@ function argument(parameter) {
 }
 
 argument(`argument`);
+
+// 3. Number Case
+function anotherFunc(func) {
+  func();
+}
+
+anotherFunc(function () {
+  console.log(`return from another function`);
+});
