@@ -27,3 +27,7 @@ function store() {
 // store in variable
 const variable = store;
 variable();
+
+// store in array
+const array = ["minhajul", store];
+array[1]();
