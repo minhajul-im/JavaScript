@@ -38,3 +38,10 @@ const object = {
   store,
 };
 object.store();
+
+// 2. Number Case
+function argument(parameter) {
+  return `Pass an  ${parameter}`;
+}
+
+argument(`argument`);
