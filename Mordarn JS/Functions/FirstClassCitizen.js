@@ -18,3 +18,12 @@ Stored in data structures: Functions can be stored in arrays, objects, or other 
  *
  * return from another function;
  */
+
+// 1. Number case,
+function store() {
+  return `A function cna be store variable(array, object, function)`;
+}
+
+// store in variable
+const variable = store;
+variable();
