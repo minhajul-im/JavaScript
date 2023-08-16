@@ -11,3 +11,6 @@ const includes = str.includes("d");
 
 //search(): This method returns the index of the first occurrence of the specified regular expression in the current string.
 const search = str.search("l");
+
+//replaceAll(): This method replaces all occurrences of the specified regular expression with the specified replacement string.
+const replaceAll = templateString.replaceAll(`Bangladesh`, `Dhaka`);
