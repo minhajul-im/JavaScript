@@ -8,3 +8,6 @@ const templateString = `Hello Bangladesh, It's a small country. Many population 
 
 //includes(): This method returns a boolean indicating whether or not the specified substring is contained in the current string.
 const includes = str.includes("d");
+
+//search(): This method returns the index of the first occurrence of the specified regular expression in the current string.
+const search = str.search("l");
