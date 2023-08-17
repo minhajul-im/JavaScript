@@ -1,6 +1,7 @@
-//  Template String You can use multi line string and you can use function and condition whatever it is.
-const str = `Bangladesh`;
-const templateString = `Hello Bangladesh, It's a small country. Many population live in Bangladesh.`;
+const str = "Hello Bangladesh";
 
-// just for joining use this method.
-const concat = str.concat(templateString);
+// length: This method returns the length of the current string.
+const length = str.length; // 16
+
+//  Template String You can use multi line string and you can use function and condition whatever it is.
+const templateString = `Hello Bangladesh, It's a small country. Many population live in Bangladesh.`;

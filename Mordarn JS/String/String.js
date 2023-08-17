@@ -1,5 +1,3 @@
-// <-- ---------------TODO: More Example and Clear ConceptTODO:--------- -->
-
 const string = "String"; // you can any data store in string.
 
 //let it's a variable you can change.
