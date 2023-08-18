@@ -14,3 +14,6 @@ const search = str.search("l");
 
 //replaceAll(): This method replaces all occurrences of the specified regular expression with the specified replacement string.
 const replaceAll = templateString.replaceAll(`Bangladesh`, `Dhaka`);
+
+//toLocaleLowerCase(): This method converts the current string to lowercase, using the current locale.
+const lowercase = str.toLocaleLowerCase();
