@@ -1,4 +1,4 @@
-const str = "Hello Bangladesh";
+const str = "Hello-Bangladesh";
 
 // length: This method returns the length of the current string.
 const length = str.length; // 16
@@ -20,3 +20,8 @@ const lowercase = str.toLocaleLowerCase(); // hello bangladesh
 
 // toLocaleUpperCase(): This method converts the current string to uppercase, using the current locale.
 const uppercase = str.toUpperCase(); // HELLO BANGLADESH
+
+//match(): This method returns an array of matches for the specified regular expression in the current string.
+
+//Using a regular expression without the 'g' flag to find the first occurrence of 'Bangladesh'
+const match = templateString.match(/Bangladesh/); // index 6
