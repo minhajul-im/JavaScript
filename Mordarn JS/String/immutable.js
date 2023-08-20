@@ -25,3 +25,6 @@ const uppercase = str.toUpperCase(); // HELLO BANGLADESH
 
 //Using a regular expression without the 'g' flag to find the first occurrence of 'Bangladesh'
 const match = templateString.match(/Bangladesh/); // index 6
+
+// Using a regular expression with the 'g' flag to find all occurrences of 'Bangladesh'
+const matchGlobal = templateString.match(/Bangladesh/g); // [Bangladesh, Bangladesh]
