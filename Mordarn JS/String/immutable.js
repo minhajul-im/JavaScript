@@ -44,3 +44,10 @@ const charCodeAt = str.charCodeAt(5); // 45
 
 //lastIndexOf(): This method returns the index of the last occurrence of the specified substring in the current string.
 const lastIndexOf = str.lastIndexOf("B"); // B
+
+//slice() method is used to extract a section of a string or an array and returns a new string or array containing the selected elements. The method takes two arguments: the start index and the end index (optional).
+const slice1 = str.slice(0, 5); // Hello
+// take last index
+const slice2 = str.slice(-4); // desh
+// cut first index but return remain data
+const slice3 = str.slice(6); // Bangladesh

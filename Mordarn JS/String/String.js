@@ -24,26 +24,16 @@ const templateStringFunc = `Hey, I'm ${minhaj?.name?.firstName}
 // just for joining use this method.
 const concat = str.concat(templateString);
 
-// when you check (have it or haven't it) return Boolean.
-const includes = str.includes("d");
-
-// return index number
-const search = str.search("l");
-
-// when you want to index number.
-const indexOf = str.indexOf("d");
-
-//when you want last index number
-const lastIndexOf = str.lastIndexOf("d");
-
 // (start and end) space remove done.
 const trimStr = "     minhaj      ";
-const trimStart = trimStr.trimStart();
-const trim = trimStr.trim();
-const trimEnd = trimStr.trimEnd();
+// const trimStart = trimStr.trimStart();
+// const trim = trimStr.trim();
+// const trimEnd = trimStr.trimEnd();
+
+console.log(trimStr.length);
 
 // start to end slice
-const slice = trimStr.slice(1, 3);
+const slice = str.slice(1, 9);
 
 // when you want to use split method(symbol, space, semicolon) return Array.
 const split = templateString.split("");
