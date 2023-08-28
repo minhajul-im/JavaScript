@@ -5,7 +5,7 @@ const str = "Hello-Bangladesh";
 const length = str.length; // 16
 
 //  Template String You can use multi line string and you can use function and condition whatever it is.
-const templateString = `Hello Bangladesh, It's a small country. Many population live in Bangladesh.`;
+const templateString = `,It's a small country. Many population live in Bangladesh.`;
 
 //includes(): This method returns a boolean indicating whether or not the specified substring is contained in the current string.
 const includes = str.includes("d"); // true
@@ -51,3 +51,6 @@ const slice1 = str.slice(0, 5); // Hello
 const slice2 = str.slice(-4); // desh
 // cut first index but return remain data
 const slice3 = str.slice(6); // Bangladesh
+
+//concat(): This method concatenates the specified strings to the end of the current string.
+const concat = str.concat(templateString);

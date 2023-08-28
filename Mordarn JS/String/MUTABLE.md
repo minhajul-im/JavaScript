@@ -1,7 +1,5 @@
 # Mutable string methods
 
-concat(): This method concatenates the specified strings to the end of the current string.
-
 replace(): This method replaces all occurrences of the specified substring with the specified replacement string.
 
 slice(): This method returns a new string that contains the specified substring of the current string.
