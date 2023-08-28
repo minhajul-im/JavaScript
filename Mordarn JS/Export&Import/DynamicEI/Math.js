@@ -1,3 +1,7 @@
 const random = (ran) => {
-  return Math.trunc(Math.random() * ran);
+  const rand = Math.random() * ran;
+  
+  const floor = Math.floor(rand);
+
+  return floor;
 };
