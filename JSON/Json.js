@@ -1,7 +1,5 @@
-// Start json
-
 /**
- * What is json?
+ * What is JSON?
  *JSON (JavaScript Object Notation) is a lightweight data interchange format that is commonly used for transmitting data between a server and a web application, as well as for storing and structuring data. It is designed to be easy for humans to read and write and easy for machines to parse and generate.
 
  JSON represents data in a key-value pair format, similar to how objects are represented in JavaScript.
