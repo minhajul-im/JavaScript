@@ -1,13 +1,4 @@
-// async function implement
-
-const getRequest = async (url) => {
-  try {
-    const res = await fetch(url);
-    const data = await res.json();
-    console.log(data);
-  } catch (err) {
-    console.log(err);
-  }
-};
-
-getRequest("www.example.com/");
+/**
+ * What is async?
+ * async is a keyword in javascript & when creating an async function then need the async. an async function always returns value inside the wrap of the promise.
+ */
