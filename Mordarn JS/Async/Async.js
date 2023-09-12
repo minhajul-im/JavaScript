@@ -7,4 +7,18 @@ const asyncFunc = async () => {
   return "Return value inside the wrap of the promise!";
 };
 
-asyncFunc(); //Promise {<fulfilled>: 'Return value inside the wrap of the promise!'}
+//Promise {<fulfilled>: 'Return value inside the wrap of the promise!'}
+asyncFunc();
+
+const promise = new Promise((resolve, reject) => {
+  resolve("Promise resolved");
+});
+
+const promiseFunc = () => {
+  return promise;
+};
+
+// return Promise {<fulfilled>: 'Promise resolved'}
+const getPromiseValue = promiseFunc().then((resolveValue) => {
+  console.log(resolveValue); // Promise resolved
+});
