@@ -22,3 +22,4 @@ const promiseFunc = () => {
 const getPromiseValue = promiseFunc().then((resolveValue) => {
   console.log(resolveValue); // Promise resolved
 });
+// when you want to value you have to use then
