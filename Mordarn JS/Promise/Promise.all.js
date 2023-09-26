@@ -1,38 +1,55 @@
 /*
  *  How does work Promise.all?
- *  Promise.all take maximum time in all promises then execute the all promise.
- *  but if anyone's promise is rejected then all promises are rejected. that is the concept.
+ *  (Promise.all)will take maximum time for the promise.
+ *  because will wait for all of them to finish (fulfill), then execute all promises.
  */
-
 const promise1 = new Promise((resolve, _reject) => {
   setTimeout(() => resolve("promise1"), 1000);
 });
 
-const promise2 = new Promise((resolve, reject) => {
-  setTimeout(() => resolve("promise2"), 3000); // resolve
-  // setTimeout(() => reject("promise2"), 3000); // reject
+const promise2 = new Promise((resolve, _reject) => {
+  setTimeout(() => resolve("promise2"), 3000);
 });
 
 const promise3 = new Promise((resolve, _reject) => {
   setTimeout(() => resolve("promise3"), 6000);
 });
 
-const allPromises = Promise.all([promise1, promise2, promise3]);
-// console.log(allPromises); // actually it'qs return a promise
+const allPromisesResolve = Promise.all([promise1, promise2, promise3]);
 
-/**
- *  if all promises are resolved //  ['promise1', 'promise2', 'promise3']
- *  if anyone's promise is rejected// Uncaught (in promise) promise2
- */
-
-// allPromises.then((value) => console.log(value));
-
-const asyncFunc = async () => {
+const asyncResolveFunc = async () => {
   try {
-    const res = await allPromises;
+    const res = await allPromisesResolve;
     console.log(res);
   } catch (error) {
     console.error(error);
   }
 };
-asyncFunc();
+asyncResolveFunc();
+
+/**
+ *  if anyone's promise has been rejected then all promises will be rejected.
+ *  If any promise is rejected (Promise.all), it takes minimum time for rejection.
+ */
+const promise4 = new Promise((_resolve, reject) => {
+  setTimeout(() => reject("promise1"), 1000);
+});
+
+const promise5 = new Promise((_resolve, reject) => {
+  setTimeout(() => reject("promise2"), 3000);
+});
+
+const promise6 = new Promise((_resolve, reject) => {
+  setTimeout(() => reject("promise3"), 6000);
+});
+
+const allPromisesReject = Promise.all([promise1, promise2, promise3]);
+
+const asyncRejectFunc = async () => {
+  try {
+    const res = await allPromisesReject;
+    console.log(res);
+  } catch (error) {
+    console.error(error);
+  }
+};
