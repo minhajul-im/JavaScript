@@ -30,6 +30,7 @@ asyncResolveFunc();
 /**
  *  if anyone's promise has been rejected then all promises will be rejected.
  *  If any promise is rejected (Promise.all), it takes minimum time for rejection.
+ *  (immediately as soon as error happened)
  */
 const promise4 = new Promise((_resolve, reject) => {
   setTimeout(() => reject("promise1"), 1000);
