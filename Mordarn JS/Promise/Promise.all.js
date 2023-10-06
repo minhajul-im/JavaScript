@@ -33,15 +33,15 @@ asyncResolveFunc();
  *  (immediately as soon as error happened)
  */
 const promise4 = new Promise((_resolve, reject) => {
-  setTimeout(() => reject("promise1"), 1000);
+  setTimeout(() => reject("promise4"), 1000);
 });
 
 const promise5 = new Promise((_resolve, reject) => {
-  setTimeout(() => reject("promise2"), 3000);
+  setTimeout(() => reject("promise5"), 3000);
 });
 
 const promise6 = new Promise((_resolve, reject) => {
-  setTimeout(() => reject("promise3"), 6000);
+  setTimeout(() => reject("promise6"), 6000);
 });
 
 const allPromisesReject = Promise.all([promise1, promise2, promise3]);
@@ -54,3 +54,5 @@ const asyncRejectFunc = async () => {
     console.error(error);
   }
 };
+
+asyncRejectFunc();
