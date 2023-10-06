@@ -44,7 +44,7 @@ const promise6 = new Promise((_resolve, reject) => {
   setTimeout(() => reject("promise6"), 6000);
 });
 
-const allPromisesReject = Promise.all([promise1, promise2, promise3]);
+const allPromisesReject = Promise.all([promise4, promise5, promise6]);
 
 const asyncRejectFunc = async () => {
   try {

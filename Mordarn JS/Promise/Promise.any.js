@@ -34,3 +34,33 @@ const promiseAny = async () => {
 };
 
 promiseAny();
+
+/**
+ * reject any
+ */
+
+const promise4 = new Promise((_resolve, reject) => {
+  setTimeout(() => reject("promise4"), 1000);
+});
+
+const promise5 = new Promise((_resolve, reject) => {
+  setTimeout(() => reject("promise5"), 3000);
+});
+
+const promise6 = new Promise((_resolve, reject) => {
+  setTimeout(() => reject("promise6"), 6000);
+});
+
+const allPromisesReject = Promise.any([promise4, promise5, promise6]);
+
+const anyRejectFunc = async () => {
+  try {
+    const data = await allPromisesReject;
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+    console.log(error.errors); // [ 'promise4', 'promise5', 'promise6' ]
+  }
+};
+
+anyRejectFunc();
