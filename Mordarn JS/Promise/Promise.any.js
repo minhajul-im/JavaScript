@@ -10,12 +10,12 @@
  * 2. promise1
  */
 
-const promise1 = new Promise((resolve, reject) => {
+const promise1 = new Promise((resolve, _reject) => {
   setTimeout(() => resolve("promise1"), 2000);
 });
 
-const promise2 = new Promise((resolve, reject) => {
-  setTimeout(() => resolve("promise2"), 3000);
+const promise2 = new Promise((_resolve, reject) => {
+  setTimeout(() => reject("promise2"), 3000);
 });
 
 const promise3 = new Promise((resolve, _reject) => {
@@ -35,9 +35,7 @@ const promiseAny = async () => {
 
 promiseAny();
 
-/**
- * reject any
- */
+// reject promise.any
 
 const promise4 = new Promise((_resolve, reject) => {
   setTimeout(() => reject("promise4"), 1000);
