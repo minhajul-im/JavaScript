@@ -38,16 +38,16 @@ class Car {
 }
 
 // Creating an instance of the Car class
-let myCar = new Car("red", "Toyota", "Camry");
+let helloCar = new Car("red", "Toyota", "Camry");
 
-// Accessing the attributes of myCar
-console.log(`Color:${myCar.color}`);
-console.log(`Brand:${myCar.brand}`);
-console.log(`Model:${myCar.model}`);
+// Accessing the attributes of helloCar
+console.log(`Color:${helloCar.color}`);
+console.log(`Brand:${helloCar.brand}`);
+console.log(`Model:${helloCar.model}`);
 
-// Calling methods on myCar
-myCar.start();
-myCar.accelerate();
-myCar.brake();
+// Calling methods on helloCar
+helloCar.start();
+helloCar.accelerate();
+helloCar.brake();
 
 console.log(Car._stopStatic());
