@@ -5,9 +5,7 @@ for (const word of wordsArr) {
   console.log(word);
 }
 
-//implement for of loop on object
-
-// for of loop implement object;
+// you can use "For-Of-Loop" in Object.
 const objNames = {
   name1: "hello1",
   name2: "hello2",
@@ -18,15 +16,32 @@ const objNames = {
 };
 //you can use this example, but if you want to keys, values & entries what you want.
 
-// if you want keys
-const object2 = Object.keys(objNames);
-
-// if you want values
-const object1 = Object.values(objNames);
-
-//if you want both means keys & values
-const object3 = Object.entries(objNames);
-
-for (const name of object1) {
-  console.log(name);
+// return all keys in array.
+const sakibKeys = Object.keys(objNames);
+for (const key of sakibKeys) {
+  console.log(key);
 }
+
+// return all values in array.
+const sakibValues = Object.values(objNames);
+for (const value of sakibValues) {
+  console.log(value);
+}
+
+//return (key & value) in array.
+const sakibEntries = Object.entries(objNames);
+for (const [key, value] of sakibEntries) {
+  console.log(`"${key}" : "${value}"`);
+}
+
+// using for of
+const forOf = (x) => {
+  let sum = 0;
+
+  for (const item of x) {
+    sum += item;
+  }
+
+  return sum;
+};
+console.log(forOf(x));
